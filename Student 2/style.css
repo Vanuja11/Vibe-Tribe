@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ico {
+    color: white;
+}
+
+/*importing a downloaded fonts*/
+@font-face {
+    font-family: camar;
+    src: url(camar/Camar.otf);
+}
+
+@font-face {
+    font-family: rachel;
+    src: url(rachel/Rachel\ Roman.ttf);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-family: rachel;
+}
+
+.navbar {
+    margin: 0;
+    padding: 8px;
+    display: flex;
+}
+
+.logo {
+    width: 125px;
+    height: 75px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.navlink-container {
+    display: flex;
+    font-size: small;
+}
+
+.navlink-container li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.navlink-container li:hover {
+    color: white;
+    transition: 0.4s all ease;
+}
+
+.navlink-container li::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(67, 56, 202);
+    transform-origin: bottom right;
+    transition: 0.5s ease-out;
+}
+
+.navlink-container li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a{
+    display: flex;
+    margin: 12px 12px 6px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    border: 32px;
+    color: white;
+}
+
+/*button container for sign in and sign up*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.button-container-sign-in {
+    padding: 9px;
+    margin-left: 32px;
+    color: white;
+    border: 2px solid rgb(67, 56, 202);
+    border-radius: 7px;
+}
+
+.button-container-sign-up {
+    padding: 9px;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: white;
+    background: linear-gradient(to bottom right, rgb(174, 19, 81), rgb(67, 56, 202));
+    border: none;
+    border-radius: 7px;
+}
+
+.hero {
+    margin-bottom: 2px;
+    background-color: black;
+}
+
+/*pciture content*/
+.hero-content {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./herobackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid white;
+    border-bottom: 0px;
+}
+
+.hero h1 {
+    margin-top: 60px;
+    font-size: 64px;
+    font-family: camar;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.hero p {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: rachel;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+
+.info {
+    margin-left: 2px;
+    margin-right: 1px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+}
+
+/*Discover music text container*/
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    background-color: black;
+    border: white;
+
+}
+
+.info h1 {
+    padding: 4px 24px 8px 24px;
+    font-family: camar;
+    font-size: 64px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.info p {
+    font-family: rachel;
+    padding: 16px 28px 18px 24px;
+    font-size: 26px;
+    color: rgb(255, 65, 112);
+}
+
+/*video container*/
+.info-vid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 46px;
+    margin: 5px;
+    border: 2px solid white;
+    background-color: black;
+}
+
+/*video attributes*/
+.info-vid {
+    width: 300px;
+    border: 2px solid black;
+}
+
+.eventcontainer {
+    font-family: camar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-top: 2px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+}
+
+.events h1 {
+    font-size: 64px;
+    letter-spacing: 3px;
+    color: white;
+    padding: 24px;
+    text-decoration: underline;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.slides {
+    justify-content: center;
+    display: none;
+}
+
+/* The dots/ndicators */
+/* .dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    margin-bottom: 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+} */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.eventp {
+    text-align: center;
+    justify-content: center;
+    font-family: rachel;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: black;
+    padding: 32px 24px 18px 24px;
+    letter-spacing: 1px;
+    border: white;
+}
+
+.book {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+button {
+    position: relative;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 7px;
+    border: 2px solid rgb(174, 19, 81);
+    font-family: rachel;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    font-size: 16px;
+    color: rgb(174, 19, 81);
+    border: 2px solid rgb(174, 19, 81);
+    background: white;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.415);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.platform {
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.platpartners h1 {
+    display: flex;
+    justify-content: center;
+    font-family: camar;
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: white;
+    background-color: black;
+}
+
+.platcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify {
+    padding-left: 200px;
+    background-color: black;
+}
+
+.apple {
+    padding-left: 150px;
+    background-color: black;
+}
+
+.soundcloud {
+    padding-left: 140px;
+    background-color: black;
+}
+
+.comments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 36px;
+    background-color: black;
+}
+
+.question {
+    font-family: rachel;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(174, 19, 81);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.radio_input {
+    position: absolute;
+    opacity: 0;
+    margin-left: 37px;
+}
+
+.radio__radio {
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid rgb(174, 19, 81);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.radio__radio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(174, 19, 81);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.15s;
+}
+
+/*this is done so that when the radio button is pressed it shows that its selected*/
+.radio_input:checked+.radio__radio::after {
+    transform: scale(1);
+}
+
+.commentcard {
+    font-family: rachel;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card {
+    color: #fff;
+    background-color: black;
+    border: 2px solid rgb(174, 19, 81);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    position: relative;
+}
+
+.form .group label {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.form .group input,
+.form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form .group input:placeholder-shown+label,
+.form .group textarea:placeholder-shown+label {
+    top: 10px;
+    background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+    border-color: rgb(174, 19, 81);
+    color: #fff;
+}
+
+.form .group input:focus+label,
+.form .group textarea:focus+label {
+    top: -10px;
+    left: 10px;
+    padding: 0px 4px;
+    background-color: black;
+    color: rgb(174, 19, 81);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form .group textarea {
+    resize: none;
+    height: 80px;
+}
+
+.form button {
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(174, 19, 81);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form button:hover {
+    background-color: white;
+    color: rgb(174, 19, 81);
+}
+
+.satis-form{
+    padding-top: 30px;
+    display: flex;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+select{
+    display: inline-block;
+    font-family: rachel;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid rgb(174, 19, 81);
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.mainfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+}
+
+.page{
+    text-decoration: underline;
+    color: #dfdfdf;
+    font-size: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.official li {
+    list-style: none;
+    color: #bbb;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    padding: 10px;
+    margin: 5px 150px 0px 150px;
+}

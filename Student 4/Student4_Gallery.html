@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <title>VIBE TRIVE | Gallery</title>
+        
+        <link rel="stylesheet" href="Style2.css">
+        <script src="JavaScript.js"></script>
+        <link rel="stylesheet" href="nav.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="navbar">
+                <a href="../Student 2/CW.html"><img src="../Student 2/LOGO.png" class="logo" alt="logo"></a>
+            </div>
+            <div>
+                <ul class="navlink-container">
+                    <li><a href="../Student 3/quiz/aboutUS.html" class="nav-links" target="_self">ABOUT US</a></li>
+                    <li><a href="../Student 4/Student4_SVG.html" class="nav-links" target="_self">SITE-MAP</a></li>
+                    <li><a href="../Student 2/contents.html" class="nav-links" target="_self">CONTENTS</a></li>
+                    <li><a href="../Student 3/quiz/index.html" class="nav-links" target="_self">POP-QUIZ</a></li>
+                    <li><a href="../Student 4/Student4_Gallery.html" class="nav-links" target="_self">GALLERY</a></li>
+                    <li><a href="../Student 1/buyproducts.html" class="nav-links" target="_self">STORE</a></li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <a href="../Student 2/sign.html" class="button-container-sign-in">SIGN-IN</a>
+                <a href="../Student 2/sign.html" class="button-container-sign-up">SIGN-UP</a>
+            </div>
+        </nav>
+
+        <h3>Background color :-</h3>
+        <button class="fontSelector" type="button" onclick="myFunction()">Yellow</button>
+        <button class="fontSelector" type="button" onclick="myFunction2()">White</button>
+        <button class="fontSelector" type="button" onclick="myFunction3()">Blue</button>
+        <button class="fontSelector" type="button" onclick="random_color()">Random</button>
+
+        <div class="fontsize">
+            <button class="fontSelector" id="fontsize" type="button" onclick="myFunction4()">A</button>
+            <button class="fontSelector" id="fontsize1" type="button" onclick="myFunction5()">A</button>
+            <button class="fontSelector" id="fontsize2" type="button" onclick="myFunction6()">A</button>      
+        </div>
+
+        <h3>Text color:-</h3>
+        <button class="fontSelector" type="button" onclick="myFunction7()">Red</button>
+        <button class="fontSelector" type="button" onclick="myFunction8()">Purple</button>
+        <button class="fontSelector" type="button" onclick="myFunction9()">Green</button>
+        <button class="fontSelector" type="button" onclick="random_color2()">Random</button>
+
+        
+        <div class="heading">
+            <h1>Grammy awards / winners (2022)</h1>
+        </div>
+
+        <div class="images" id="blurpage">
+            <div class="image2">
+                <img class="blur" src="About_damn_time.png" id="image1" alt="error">
+                <div class="content fade">
+                    RECORD OF THE YEAR
+                </div>
+            </div>
+            <a class="readmore" id="readmore1" href="#" onclick="toggle()">
+                Read more
+            </a>
+
+            <div class="image2">
+                <img class="blur" src="Harry_house.webp" id="image2" alt="error">
+                <div class="content fade">
+                    ALBUM OF THE YEAR
+                </div>
+            </div>
+            <a class="readmore" id="readmore2" href="#" onclick="toggle2()">
+                Read more
+            </a>
+
+            <div class="image2">
+                <img class="blur" src="just_like_that.png" id="image3" alt="error">
+                <div class="content fade">
+                    SONG OF THE YEAR
+                </div>
+            </div>
+            <a class="readmore" href="#" onclick="toggle3()">
+                Read more
+            </a>
+            
+            <div class="image2">
+                <img class="blur" src="easy_on_me.jpg" id="image4" alt="error">
+                <div class="content fade">
+                    BEST POP SOLO PERFORMANCE
+                </div>
+            </div>
+            <a class="readmore" href="#" onclick="toggle4()">
+                Read more
+            </a>
+
+            <div class="image2">
+                <img class="blur" src="unholy.png" id="image5" alt="error">
+                <div class="content fade">
+                    BEST POP DUO PERFORMANCE
+                </div>
+            </div>
+            <a class="readmore" href="#" onclick="toggle5()">
+                Read more
+            </a>
+                        
+        </div>
+
+        <div id="popup1">
+            <img src="Lizzo.png" alt="" height="200">
+            <h3>American singer and rapper Lizzo's fourth studio album Special's lead single,
+                 "About Damn Time," was made available on April 14, 2022, through Nice Life Recordings and 
+                 Atlantic Records (2022). The song peaked at number one in the US, becoming her second number-one
+                  single there, and also peaked in the top three in ten other nations. It also peaked at number six 
+                  on the Billboard Global 200 chart.</h3>
+            <a class="readmore" href="#" onclick="toggle()">
+                Close
+            </a>
+        </div>
+        <div id="popup2">
+            <img src="Harry.jpg" alt="" height="200">
+            <h3>Harry Styles' third studio album, Harry's Home, was released on May 20, 2022, by Columbia 
+                Records and Erskine. Harry Styles is an English singer and songwriter. The album, which has 
+                been hailed as Styles' most contemplative work, was mostly written and recorded between 2020 
+                and 2021. The pop-funk, pop rock, and synth-pop album Harry's House was influenced by the 
+                Japanese city pop of the 1970s.</h3>
+            <a class="readmore" href="#" onclick="toggle2()">
+            Close
+            </a>
+        </div>
+        <div id="popup3">
+            <img src="Raitt.jpg" alt="" height="200">
+            <h3>The title track of American singer and multi-instrumentalist Bonnie Raitt's 18th studio album,
+                 Just Like That, which was released on April 22, 2022 by Redwing Records, is the song "Just Like That."
+                  The song's lyrics tell the tale of a mom who receives a visit from the person who received her son's 
+                  heart during a life-saving organ donation procedure. It was written and produced by Raitt.</h3>
+            <a class="readmore" href="#" onclick="toggle3()">
+            Close
+            </a>
+        </div>
+        <div id="popup4">
+            <img src="Adele.webp" alt="" height="200">
+            <h3>Adele, an English singer, has a song called "Easy on Me" in her fourth studio album 30. (2021). 
+                Along with Greg Kurstin, the song's producer, Adele wrote it. On October 15, 2021, Columbia Records 
+                released it as the album's lead single. It is a sparsely produced pop ballad that is accompanied by 
+                a prominent, somber piano and driven by light bass beats. The lyrics are Adele's request to her son, 
+                in which she describes her troubles with her disintegrated marriage and asks him to be kind to her. 
+                The lyrics express themes of nostalgia, regret, and forgiveness.</h3>
+                    <a class="readmore" href="#" onclick="toggle4()">
+                    Close
+                </a>
+        </div>
+        <div id="popup5">
+            <img src="Sam_Smith.jpg" alt="" height="200">
+            <h3>Sam Smith, a British vocalist, collaborated with Kim Petras, a German singer, on the song "Unholy."
+                It was made available as Smith's fourth studio album's second single on September 22, 2022.</h3>
+                    <a class="readmore" href="#" onclick="toggle5()">
+                    Close
+                </a>
+        </div>  
+        <div class="mainfoot">
+            <!--page editor-->
+            <div class="editor">
+                <a href="index.html" class="page" target="_blank">My Page Editor</a>
+            </div>
+            <!--footer -->
+            <div class="footer">
+                <div class="official">
+                    <ul>
+                        <li>Terms of Service</li>
+                        <li>Privacy policy</li>
+                        <li>Licensing</li>
+                    </ul>
+                </div>
+                <div class="official">
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Help Desk</li>
+                        <li>Location</li>
+                    </ul>
+                </div>
+                <div class="official">
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Whatsapp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

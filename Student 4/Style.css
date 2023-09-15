@@ -1,0 +1,58 @@
+body{
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#BG_image {
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: white;
+}
+
+g > text,
+.svgBox {
+  cursor: pointer;
+}
+
+#svgJS g:hover polyline,
+#svgJS g:hover line {
+      fill: none;
+      stroke-width: 2;
+      stroke: black;
+  }
+
+  #svgJS g:hover g text,
+  #svgJS g:hover text {
+      font-weight: bold;
+  }
+
+  #svgJS g:hover rect,
+  #svgJS g:focus rect {
+      fill: hsla(24, 20%, 50%,.3);
+      stroke: black;
+      stroke-width: 4;
+  }
+  
+  .svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #svgJS {
+      text-align: center;
+  }

@@ -1,0 +1,334 @@
+body{
+    align-items: center;
+margin: 0;
+padding: 0;
+font-size: 15px;
+}
+
+.fontsize {
+  float: right;
+  text-align: right;
+  margin-top: -20px;
+}
+.fontsize button {
+  margin: 5px;
+  display: block;
+}
+
+.fontSelector {
+  padding: auto;
+  position: relative;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+  background: black;
+  height: 33px;
+}
+.fontSelector:hover {
+cursor: pointer;
+}
+#fontsize1 {
+  font-size: 10px;
+}
+#fontsize1 {
+  font-size: 20px;
+}
+#fontsize2 {
+  font-size: 30px;
+}
+
+#fontsize,
+#fontsize1,
+#fontsize2 {
+  width: 40px;
+}
+
+.heading {
+  text-align: center;
+}
+
+#image2, 
+#image4 {
+    width: 300;
+}
+
+.images {
+    text-align: center;
+    padding-top: 50px;
+}
+#image1,
+#image2,
+#image3, 
+#image4,
+#image5 {
+    padding: 8px;
+    box-shadow: 0 10px 20px;
+    height: 300px;
+}
+  
+  .image2 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image > img {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+  }
+  .image2 > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.619);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content.fade {
+    color: antiquewhite;
+  }
+  .content.fade:hover {
+    cursor: pointer;
+  }
+  .image2 > img,
+  .image2 > .content {
+    transition: 200ms ease-in-out;
+  }
+  
+  .image2:hover > img.blur {
+    filter: blur(5px);
+  }
+  .image2 > .content.fade {
+    opacity: 0;
+  }
+  .image2:hover > .content.fade {
+    opacity: 1;
+  }
+/* css for the readmore buttons */
+
+.readmore { 
+  padding: 5px 30px;
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+  background: black;
+}
+
+/*blurring the page   */
+.images#blurpage.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* styling the popup */
+#popup1,
+#popup2,
+#popup3,
+#popup4,
+#popup5 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 500px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#popup1.active,
+#popup2.active,
+#popup3.active,
+#popup4.active,
+#popup5.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* sign in  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: rachel;
+  src: url(rachel/Rachel\ Roman.ttf);
+}
+
+.signcontainer{
+  font-family: rachel;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  background: linear-gradient(to bottom right, rgb(174, 19, 81), rgb(67, 56, 202));
+}
+
+.container{
+  background-color: black;
+  padding: 100px 100px;
+  border: 70px solid black;
+}
+
+.container2{
+  background-color: black;
+  padding: 100px 100px;
+  border: 70px solid black;
+}
+
+.singup{
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 1.5em;
+}
+
+.signin{
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 1.5em;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column; 
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.615);
+  border-radius: 8px;
+}
+
+.card2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.615);
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1{
+  position: relative;
+  width: 250px;
+}
+
+.inputBox input,
+.inputBox1 input{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span{
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span{
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span{
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus{
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter{
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.4s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}

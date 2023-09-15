@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading {
+    font-size: 50px;
+    margin: 40px;
+}
+#my_pic {
+    height: 200px;
+    box-shadow: 0 10px 20px;
+    margin-bottom: 30px;
+}
+
+.details {
+    text-align: center;
+}
+
+.page_details {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    padding: 3%;
+    background-color: antiquewhite;
+}
+
+.links {
+    color: black;
+    display: block;
+    text-decoration: underline;
+}

@@ -1,0 +1,130 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-family: rachel; 
+    
+}
+.navbar{
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    
+}
+
+.logo{
+    width: 125px;
+    height: 75px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.navlink-container{
+    display: flex;
+    font-size: small;
+}
+
+.navlink-container li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.navlink-container li:hover{
+    color:white;
+    transition:0.4s all ease;
+}
+
+.navlink-container li::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(67, 56, 202);
+    transform-origin: bottom right;
+    transition: 0.5s ease-out;
+}
+
+.navlink-container li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a{
+    display: flex;
+    margin: 12px;
+    text-decoration: none;  
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    border: 32px;
+    color: white;
+}
+
+/*button container for sign in and sign up*/
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.button-container-sign-in{
+    padding: 9px;
+    margin-left: 32px;
+    color: white;
+    border: 2px solid rgb(67, 56, 202);
+    border-radius: 7px; 
+}
+
+.button-container-sign-up{
+    padding: 9px;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: white;
+    background:linear-gradient(to bottom right, rgb(174, 19, 81), rgb(67, 56, 202));
+    border: none;
+    border-radius: 7px;   
+}
+
+/* adding the footer */
+
+.mainfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+}
+
+.page{
+    text-decoration: underline;
+    color: #dfdfdf;
+    font-size: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.official li {
+    list-style: none;
+    color: #bbb;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    padding: 10px;
+    margin: 5px 150px 0px 150px;
+}

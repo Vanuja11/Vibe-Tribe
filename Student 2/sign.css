@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: rachel;
+    src: url(rachel/Rachel\ Roman.ttf);
+}
+
+.signcontainer{
+    font-family: rachel;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background: linear-gradient(to bottom right, rgb(174, 19, 81), rgb(67, 56, 202));
+}
+
+.container{
+    background-color: black;
+    padding: 100px 100px;
+    border: 70px solid black;
+}
+
+.container2{
+    background-color: none;
+}
+
+.singup{
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 1.5em;
+}
+
+.signin{
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 1.5em;
+}
+  
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #e3e3e3;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.615);
+    border-radius: 8px;
+}
+  
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #e3e3e3;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.615);
+    border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1{
+    position: relative;
+    width: 250px;
+}
+  
+.inputBox input,
+.inputBox1 input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+  
+.inputBox span,
+.inputBox1 span{
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+  
+.inputBox input:valid~span,
+.inputBox input:focus~span{
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+  
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span{
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+  
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus{
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+  
+.enter{
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.4s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+}
+  
+.enter:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-family: rachel; 
+    border-bottom: 2px solid white;
+}
+.navbar{
+    margin: 0;
+    padding: 8px;
+    display: flex;
+}
+
+.logo{
+    width: 125px;
+    height: 75px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.navlink-container{
+    display: flex;
+    font-size: small;
+}
+
+.navlink-container li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.navlink-container li:hover{
+    color:white;
+    transition:0.4s all ease;
+}
+
+.navlink-container li::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(67, 56, 202);
+    transform-origin: bottom right;
+    transition: 0.5s ease-out;
+}
+
+.navlink-container li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a{
+    display: flex;
+    margin: 12px;
+    text-decoration: none;  
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    border: 32px;
+    color: white;
+}

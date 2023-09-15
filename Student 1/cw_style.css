@@ -1,0 +1,475 @@
+body{
+  background-color:rgb(216, 216, 216);
+}
+/* NAV BAR FROM STUDENT 2 */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  font-family: rachel; 
+}
+.navbar{
+  margin: 0;
+  padding: 8px;
+  display: flex;
+}
+
+.logo{
+  width: 125px;
+  height: 75px;
+  object-fit: contain;
+  background-color: black;
+}
+
+.navlink-container{
+  display: flex;
+  font-size: small;
+}
+
+.navlink-container li{
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+
+.navlink-container li:hover{
+  color:white;
+  transition:0.4s all ease;
+}
+
+.navlink-container li::after{
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(67, 56, 202);
+  transform-origin: bottom right;
+  transition: 0.5s ease-out;
+}
+
+.navlink-container li:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-links a{
+  display: flex;
+  margin: 12px;
+  text-decoration: none;  
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.nav-links{
+  border: 32px;
+  color: white;
+}
+
+/*button container for sign in and sign up*/
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.button-container-sign-in{
+  padding: 9px;
+  margin-left: 32px;
+  color: white;
+  border: 2px solid rgb(67, 56, 202);
+  border-radius: 7px; 
+}
+a{
+  display: flex;
+  margin: 12px;
+  text-decoration: none;  
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.button-container-sign-up{
+  padding: 9px;
+  margin-left: 32px;
+  margin-right: 32px;
+  color: white;
+  background:linear-gradient(to bottom right, rgb(174, 19, 81), rgb(67, 56, 202));
+  border: none;
+  border-radius: 7px;   
+}
+.cart-link{
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+
+
+/* HEADER BUY PRODUCTS */
+.header img {
+    width: 97%;
+    margin: 27px;
+ } 
+
+ .slogan{
+   font-size: 75px;
+   position: absolute;
+   top:100px;
+   left:195px;
+   font-family: 'Cinzel Decorative', cursive; 
+   text-shadow: 2px 2px rgba(66, 192, 192, 0.785);
+ }
+
+ 
+ .catogeries{
+   
+   background-color:black;
+   padding: 15px 0  0 0;
+   margin: auto;
+   padding: 5px 5px 0 5px;
+   width: 97%;
+ }
+ .col {
+   width: 100%;
+   margin: 25px;
+   position: relative;
+ }
+ .col img{
+   border-radius: 10px;
+   box-sizing: border-box; 
+   width: 310px;
+   height: 240px;
+   opacity: 0.5;
+ }
+ .col img:hover{
+  opacity: 1.0;
+ }
+ 
+ .col h3{
+  position: absolute;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+   color: rgb(237, 229, 229);
+   font-size: 30px;
+   text-shadow: 2px 2px rgb(8, 8, 8);
+ }
+   #shopNow{
+   position: absolute;
+   top: 180px;
+   left: 105px;
+   width: 100px;;
+   color:white;
+   background: rgba(166, 0, 255, 0.368);
+   font-size: 12px;
+   padding: 16px 0;
+   border: 0;
+   border-radius: 20px;
+   outline: none;
+}
+  
+ .products{
+   background-color:black;
+   max-width: 1250px;
+   margin: auto;
+   padding: 30px 30px 0 30px;
+ }
+
+ .products span{
+  padding-left: 20px;
+ }
+
+ .heading {
+   display: flex;
+   color: white;
+   font-family: 'Playfair Display', serif;
+   font-size: 25px;
+}
+.heading:before,
+.heading:after {
+   content: "";
+   flex: 1 1;
+   border-bottom: 3px solid rgba(27, 238, 238, 0.995);
+   margin: auto;
+}   
+ .row{
+  
+   display: flex;
+   margin: 50px 0;
+ }
+ .row1{
+   display: flex;
+   margin: 70px 0;
+ }
+ .col-4{
+   flex-basis: 25%;
+   padding: 10px;
+   min-width: 290px;
+   margin-bottom: 50px;
+   transition: transform 0.5s;
+ }
+ 
+ .col-4{
+   width: 100%;
+ }
+ .row .col-4 img{
+   width: 290px;
+   height: 290px;
+ }
+
+ .col-4:hover{
+   transform: translateY(-5px);
+ }
+#cart{
+  background:  rgb(166, 0, 255);
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 12px 0;
+  width:120px;
+  margin: auto;
+  transform: translate(75%);
+}
+#cart:hover{
+  background-color: rgba(44, 199, 173, 0.927);
+}
+ h4{
+   font-family:'Times New Roman', Times, serif;
+   font-size: 21px;
+   text-align: center;
+   text-shadow: 0 0 15px rgb(101, 101, 101);
+   color:white;
+ }
+ p{
+  font-weight: bold;
+   text-align: center;
+   font-size: 22px;
+   font-family: 'Times New Roman', Times, serif;
+   color:white;
+  margin-top:0;
+ }
+ /* ------cart items------ */
+  .cart{
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .cart-container-header{
+    width: 100%;
+    display: flex;
+    background-color:rgb(166, 0, 255) ;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .cart-container-header h5{
+    font-size: 16px;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+  .printCart{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #d4d3d3;
+  }
+  .product{
+    width:50%;
+    display:flex;
+    align-items: center;
+    padding:10px 0;
+    border-bottom: 1px rgb(166, 0, 255); 
+  }
+  .product img{
+    width: 100px;
+    height: 100px;
+  }
+  .price{
+    width: 15%;
+    border-bottom: 1px rgb(166, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quantity{
+    width: 25%;
+    border-bottom: 1px rgb(166, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .total{
+    width: 10%;
+    border-bottom: 1px rgb(166, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .totalBasket{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+   .totalTitle{
+    width: 30%;
+    color: black;
+    font-size: 17px;
+    border-top: 5px solid rgb(44, 199, 174);
+    font-family: 'Playfair Display', serif;
+  }
+  .totalBas{
+    color: black;
+    font-size: 17px;
+    border-top: 5px solid rgb(44, 199, 174);
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  .proceed{
+    margin-right: 100px;
+  }
+  .proceed a{
+    font-family: 'Playfair Display', serif;
+   font-size: 14px;
+  background-color: rgb(166, 0, 255);
+  color: black;
+  font-weight: 580;
+  text-decoration: none;
+  padding: 10px 20px 10px 10px;
+  border-radius: 20px;
+  }
+  /* Checkout form */
+  
+  .checkout-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 1200px)
+  {
+    .checkout-container{
+      max-width: 1140px;
+    }
+  }
+  .d-flex{
+    display: flex;
+    background: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    padding: 25px;
+  }
+  .d-flex h2{
+  font-size: 20px;
+  font-weight: 550;
+  font-family: 'Playfair Display', serif;
+  color: rgb(44, 199, 174);
+  }
+  form{
+    flex: 4;
+  }
+ 
+  .title{
+    background-color: rgb(166, 0, 255) ;
+    border-radius:3px 3px 0 0 ;
+    padding: 3px;
+    border-bottom: 3px solid rgba(27, 238, 238, 0.995);
+  }
+  .title h2{
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    
+  }
+  
+  .required{
+    color: red;
+  }
+  label, table{
+    display: block;
+    margin: 15px;
+  }
+  label>span{
+    float: left;
+    width: 25%;
+    margin-top: 12px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  input[type="text"], input[type="tel"], input[type="email"], select
+  {
+    width: 70%;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 7px;
+    border: 1px solid #dadada;
+    color: #888;
+  }
+  
+  .card-icons{
+    display: flex;
+  
+  }
+  .visa,.mastercard{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	height: 30px;
+	background-color: white;
+  width: 50px;
+  margin-left: 15px;
+  }
+  
+  button{
+
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background:rgb(44, 199, 174);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  button:hover{
+    cursor: pointer;
+    background:  rgb(166, 0, 255);
+  } 
+  .mainfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+}
+
+.page{
+    text-decoration: underline;
+    color: #dfdfdf;
+    font-size: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.official li {
+    list-style: none;
+    color: #bbb;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    padding: 10px;
+    margin: 5px 150px 0px 150px;
+}
+
+
+

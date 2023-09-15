@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cw_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<title>Document</title>
+</head>
+<body style="background-color: black;">
+    <div class="checkout-container">
+        <div class="title">
+            <h2>Product Order Form</h2>
+        </div>
+      <div class="d-flex">
+        <form action="" method="">
+            <div class="card-icons">
+		
+            <h2>Payment Details</h2>
+                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1978060/visa.png' alt='' class="visa">
+			<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1978060/mastercard.png' alt='' class="mastercard">
+            </div>
+            
+            <label>
+                <span class="name">Cardholder's Name: <span class="required">*</span></span>
+                <input type="text" name="name">
+              </label>
+              <label>
+                <span class="cardNum">Card Number: <span class="required">*</span></span>
+                <input type="text" name="cardNum">
+              </label>
+              
+              <label>
+                <span class="expiry-date">Expiry Date: <span class="required">*</span></span>
+                <input type="text" name="expiry-date" placeholder="MM/YYYY">
+              </label>
+              <label>
+                <span class="cvv">CVV: <span class="required">*</span></span>
+                <input type="text" name="cvv" placeholder="xxx">
+              </label>
+            <h2>Contact Details</h2>
+          <label>
+            <span class="fname">First Name: <span class="required">*</span></span>
+            <input type="text" name="fname">
+          </label>
+          <label>
+            <span class="lname">Last Name: <span class="required">*</span></span>
+            <input type="text" name="lname">
+          </label>
+          <label>
+            <span>Contact Number: <span class="required">*</span></span>
+            <input type="tel" name="city"> 
+          </label>
+          <label>
+            <span>Email Address: <span class="required">*</span></span>
+            <input type="email" name="city"> 
+          </label>
+          <h2>Billing Address</h2>
+          <label>
+            <span>Street Address: <span class="required">*</span></span>
+            <input type="text" name="houseadd" placeholder="House number and street name" required>
+          </label>
+          <label>
+            <span>&nbsp;</span>
+            <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+          </label>
+          <label>
+            <span>City: <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>County: <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          <label>
+            <span>Postcode: <span class="required">*</span></span>
+            <input type="text" name="city"> 
+          </label>
+          
+        </form>
+       </div>
+       <button type="button">Place Order</button>
+</body>
+</html>
